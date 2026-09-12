@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EKO.4M (echoform) | Official Music Hub</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Official music catalog for EKO.4M (echoform) - Human Intention | AI Interpretation. Stream full albums and singles on Spotify, Apple Music, and YouTube." />
+  <meta property="og:title" content="EKO.4M | Official Music Hub" />
+  <meta property="og:image" content="EKO_Profile.PNG" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    :root {
+      --bg-dark: #050811;
+      --bg-card: rgba(10, 20, 42, 0.75);
+      --bg-card-hover: rgba(14, 28, 58, 0.9);
+      --cyan-glow: #00d2ff;
+      --cyan-dim: #0088cc;
+      --cyan-subtle: rgba(0, 210, 255, 0.15);
+      --border-cyan: rgba(0, 210, 255, 0.25);
+      --border-bright: rgba(0, 210, 255, 0.8);
+      --text-white: #ffffff;
+      --text-muted: #94adc7;
+      --font-display: 'Orbitron', sans-serif;
+      --font-tech: 'Rajdhani', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-white);
+      font-family: var(--font-body);
+      overflow-x: hidden;
+      line-height: 1.6;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(0, 120, 255, 0.12) 0%, transparent 60%),
+        radial-gradient(circle at 10% 40%, rgba(0, 210, 255, 0.05) 0%, transparent 40%),
+        linear-gradient(rgba(0, 210, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 210, 255, 0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(5, 8, 17, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-cyan);
+    }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 72px;
+    }
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-white);
+    }
+    .logo-img {
+      height: 36px;
+      width: auto;
+      filter: drop-shadow(0 0 8px rgba(0, 210, 255, 0.6));
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-family: var(--font-tech);
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: color 0.2s, text-shadow 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--cyan-glow);
+      text-shadow: 0 0 10px var(--cyan-glow);
+    }
+
+    /* Social Icons in Nav */
+    .nav-socials {
+      display: flex;
+      gap: 0.8rem;
+    }
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      border: 1px solid var(--border-cyan);
+      color: var(--text-white);
+      text-decoration: none;
+      font-size: 1rem;
+      background: rgba(0, 210, 255, 0.05);
+      transition: all 0.3s ease;
+    }
+    .social-btn:hover {
+      border-color: var(--cyan-glow);
+      background: rgba(0, 210, 255, 0.2);
+      transform: translateY(-2px);
+      box-shadow: 0 0 12px var(--cyan-glow);
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      padding: 5rem 0 3rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-banner {
+      width: 100%;
+      max-height: 440px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid var(--border-cyan);
+      box-shadow: 0 0 30px rgba(0, 210, 255, 0.15);
+      margin-bottom: 2.5rem;
+    }
+    .artist-tagline {
+      font-family: var(--font-tech);
+      font-size: 1.3rem;
+      letter-spacing: 4px;
+      color: var(--cyan-glow);
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+      text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+    }
+    .hero-description {
+      max-width: 680px;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Hub Links CTAs */
+    .hub-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .btn-hub {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.75rem 1.4rem;
+      border-radius: 8px;
+      font-family: var(--font-tech);
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    .btn-hub.yt {
+      background: #ff0000;
+      color: #fff;
+      border: 1px solid #ff3333;
+    }
+    .btn-hub.yt:hover {
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+      transform: translateY(-2px);
+    }
+    .btn-hub.spot {
+      background: #1db954;
+      color: #fff;
+      border: 1px solid #1ed760;
+    }
+    .btn-hub.spot:hover {
+      box-shadow: 0 0 15px rgba(30, 215, 96, 0.6);
+      transform: translateY(-2px);
+    }
+    .btn-hub.apple {
+      background: #fa243c;
+      color: #fff;
+      border: 1px solid #fc3c44;
+    }
+    .btn-hub.apple:hover {
+      box-shadow: 0 0 15px rgba(250, 36, 60, 0.6);
+      transform: translateY(-2px);
+    }
+
+    /* Section Headings */
+    .section-header {
+      margin: 4rem 0 2rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-white);
+      white-space: nowrap;
+    }
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, var(--cyan-glow), transparent);
+    }
+
+    /* Album Section - Grid */
+    .album-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .album-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-cyan);
+      border-radius: 12px;
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .album-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--cyan-glow);
+      box-shadow: 0 10px 25px rgba(0, 210, 255, 0.15);
+      background: var(--bg-card-hover);
+    }
+    .album-cover-wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 100%; /* 1:1 Aspect Ratio */
+      overflow: hidden;
+    }
+    .album-cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .album-card:hover .album-cover {
+      transform: scale(1.03);
+    }
+    .album-content {
+      padding: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+    }
+    .album-badge {
+      display: inline-block;
+      font-family: var(--font-tech);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: var(--cyan-glow);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+    .album-name {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-white);
+    }
+    .album-desc {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 1.2rem;
+    }
+    .track-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.6rem;
+      margin-top: auto;
+    }
+    .track-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-family: var(--font-tech);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      color: var(--text-white);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.5rem 0.2rem;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+    .track-link:hover {
+      background: rgba(0, 210, 255, 0.2);
+      border-color: var(--cyan-glow);
+      color: var(--cyan-glow);
+    }
+
+    /* Singles Section */
+    .singles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .single-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-cyan);
+      border-radius: 10px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      transition: all 0.25s ease;
+    }
+    .single-card:hover {
+      border-color: var(--cyan-glow);
+      background: var(--bg-card-hover);
+      transform: translateY(-3px);
+    }
+    .single-thumb {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .single-title {
+      font-family: var(--font-tech);
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #fff;
+    }
+    .single-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 5rem;
+      padding: 3rem 0;
+      border-top: 1px solid var(--border-cyan);
+      background: rgba(5, 8, 17, 0.9);
+      text-align: center;
+    }
+    .footer-text {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 0.8rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .section-title { font-size: 1.4rem; }
+      .hero-banner { max-height: 250px; }
+      .artist-tagline { font-size: 1rem; letter-spacing: 2px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="logo-link">
+        <img src="EKO4M - Digital - Megablock.png" alt="EKO.4M Digital Logo" class="logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#albums">Albums</a></li>
+        <li><a href="#singles">Singles & EPs</a></li>
+        <li><a href="https://www.youtube.com/@EKO4M/releases" target="_blank">Releases</a></li>
+      </ul>
+      <div class="nav-socials">
+        <a href="https://music.apple.com/us/artist/eko-4m/1826014624" target="_blank" class="social-btn" title="Apple Music"><i class="fa-brands fa-apple"></i></a>
+        <a href="https://open.spotify.com/artist/6dbpSdzyHrZXGraGaOJzjj?si=ZLz9DyKzTfq670CIK05Gng" target="_blank" class="social-btn" title="Spotify"><i class="fa-brands fa-spotify"></i></a>
+        <a href="https://www.youtube.com/@EKO4M/releases" target="_blank" class="social-btn" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header class="container hero">
+    <img src="EKO4M Banner.png" alt="EKO.4M Banner" class="hero-banner" />
+    <p class="artist-tagline">HUMAN INTENTION &nbsp;|&nbsp; AI INTERPRETATION</p>
+    <p class="hero-description">
+      The official sonic archive of EKO.4M (echoform). Explore high-energy electronic soundscapes, deep melodic synth explorations, and vocal architectures available across all streaming platforms.
+    </p>
+
+    <!-- Global Platform Access Links -->
+    <div class="hub-buttons">
+      <a href="https://www.youtube.com/@EKO4M/releases" target="_blank" class="btn-hub yt">
+        <i class="fa-brands fa-youtube"></i> Stream on YouTube
+      </a>
+      <a href="https://open.spotify.com/artist/6dbpSdzyHrZXGraGaOJzjj?si=ZLz9DyKzTfq670CIK05Gng" target="_blank" class="btn-hub spot">
+        <i class="fa-brands fa-spotify"></i> Spotify
+      </a>
+      <a href="https://music.apple.com/us/artist/eko-4m/1826014624" target="_blank" class="btn-hub apple">
+        <i class="fa-brands fa-apple"></i> Apple Music
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- ALBUMS SECTION -->
+    <section id="albums">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fa-solid fa-compact-disc" style="color:var(--cyan-glow); margin-right:8px;"></i> Albums & Full Length Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="album-grid">
+        <!-- Album 1: Echo Logic -->
+        <article class="album-card">
+          <div class="album-cover-wrap">
+            <img src="EKO.4M - echo logic - Album Cover.jpg" alt="echo logic Album Cover" class="album-cover" />
+          </div>
+          <div class="album-content">
+            <div>
+              <span class="album-badge">Full Album</span>
+              <h3 class="album-name">echo logic</h3>
+              <p class="album-desc">A deep dive into frequency optimization, synth-wave rhythmics, and algorithmic pulse.</p>
+            </div>
+            <div class="track-links">
+              <a href="https://www.youtube.com/@EKO4M/releases" target="_blank" class="track-link"><i class="fa-brands fa-youtube"></i> YouTube</a>
+              <a href="https://open.spotify.com/artist/6dbpSdzyHrZXGraGaOJzjj" target="_blank" class="track-link"><i class="fa-brands fa-spotify"></i> Spotify</a>
+              <a href="https://music.apple.com/us/artist/eko-4m/1826014624" target="_blank" class="track-link"><i class="fa-brands fa-apple"></i> Apple</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Album 2: Echo Locations -->
+        <article class="album-card">
+          <div class="album-cover-wrap">
+            <img src="EKO4M - echo locations - Album.jpg" alt="echo locations Album Cover" class="album-cover" />
+          </div>
+          <div class="album-content">
+            <div>
+              <span class="album-badge">Full Album</span>
+              <h3 class="album-name">echo locations</h3>
+              <p class="album-desc">A global electronic journey charting signals and frequencies across continents.</p>
+            </div>
+            <div class="track-links">
+              <a href="https://www.youtube.com/@EKO4M/releases" target="_blank" class="track-link"><i class="fa-brands fa-youtube"></i> YouTube</a>
+              <a href="https://open.spotify.com/artist/6dbpSdzyHrZXGraGaOJzjj" target="_blank" class="track-link"><i class="fa-brands fa-spotify"></i> Spotify</a>
+              <a href="https://music.apple.com/us/artist/eko-4m/1826014624" target="_blank" class="track-link"><i class="fa-brands fa-apple"></i> Apple</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SINGLES & EPS SECTION -->
+    <section id="singles">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fa-solid fa-wave-square" style="color:var(--cyan-glow); margin-right:8px;"></i> Singles & EPs</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="singles-grid">
+        <!-- Single Card: Freeze Time -->
+        <div class="single-card">
+          <img src="EKO_Profile.PNG" alt="Single Artwork" class="single-thumb" />
+          <div>
+            <h4 class="single-title">Freeze Time</h4>
+            <p class="single-meta">Single &bull; EKO.4M</p>
+          </div>
+          <div class="track-links">
+            <a href="https://www.youtube.com/@EKO4M/releases" target="_blank" class="track-link"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://open.spotify.com/artist/6dbpSdzyHrZXGraGaOJzjj" target="_blank" class="track-link"><i class="fa-brands fa-spotify"></i></a>
+            <a href="https://music.apple.com/us/artist/eko-4m/1826014624" target="_blank" class="track-link"><i class="fa-brands fa-apple"></i></a>
+          </div>
+        </div>
+
+        <!-- Single Card: O'Houlihan the Hooligan -->
+        <div class="single-card">
+          <img src="EKO_Rypng.png" alt="Single Artwork" class="single-thumb" />
+          <div>
+            <h4 class="single-title">O'Houlihan the Hooligan</h4>
+            <p class="single-meta">EP &bull; EKO.4M</p>
+          </div>
+          <div class="track-links">
+            <a href="https://www.youtube.com/@EKO4M/releases" target="_blank" class="track-link"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://open.spotify.com/artist/6dbpSdzyHrZXGraGaOJzjj" target="_blank" class="track-link"><i class="fa-brands fa-spotify"></i></a>
+            <a href="https://music.apple.com/us/artist/eko-4m/1826014624" target="_blank" class="track-link"><i class="fa-brands fa-apple"></i></a>
+          </div>
+        </div>
+
+        <!-- Single Card: Shut Your B**** Ass Up -->
+        <div class="single-card">
+          <img src="EKO4M - Digital - Megablock.png" alt="Single Artwork" class="single-thumb" style="background:#000; object-fit:contain;" />
+          <div>
+            <h4 class="single-title">Shut Your B**** Ass Up</h4>
+            <p class="single-meta">Single (Gospel Mix) &bull; EKO.4M</p>
+          </div>
+          <div class="track-links">
+            <a href="https://www.youtube.com/@EKO4M/releases" target="_blank" class="track-link"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://open.spotify.com/artist/6dbpSdzyHrZXGraGaOJzjj" target="_blank" class="track-link"><i class="fa-brands fa-spotify"></i></a>
+            <a href="https://music.apple.com/us/artist/eko-4m/1826014624" target="_blank" class="track-link"><i class="fa-brands fa-apple"></i></a>
+          </div>
+        </div>
+
+        <!-- Dynamic Link Card: Explore Full Catalog -->
+        <div class="single-card" style="justify-content:center; align-items:center; text-align:center; border-style:dashed;">
+          <i class="fa-solid fa-folder-open" style="font-size:2.5rem; color:var(--cyan-glow); margin-bottom:1rem;"></i>
+          <h4 class="single-title">Explore All Releases</h4>
+          <p class="single-meta" style="margin-bottom:1rem;">Full discography accessible directly on YouTube Releases.</p>
+          <a href="https://www.youtube.com/@EKO4M/releases" target="_blank" class="btn-hub yt" style="padding:0.5rem 1rem; font-size:0.9rem;">
+            View All on YouTube
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <img src="EKO4M - Digital - Megablock.png" alt="EKO.4M" style="height:32px; filter:drop-shadow(0 0 6px var(--cyan-glow));" />
+      <p class="footer-text">&copy; 2026 EKO.4M (echoform). All rights reserved. Human Intention | AI Interpretation.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
