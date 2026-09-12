@@ -30,7 +30,7 @@
       <div class="nav-socials">
         <a href="https://music.apple.com/us/album/echo-logic/1894984107" target="_blank" class="social-btn" title="Apple Music"><i class="fa-brands fa-apple"></i></a>
         <a href="https://open.spotify.com/album/5ikzD4bRJeoVPRFi38ummC?si=izFnbcRERaaOgtvK_fcOVQ" target="_blank" class="social-btn" title="Spotify"><i class="fa-brands fa-spotify"></i></a>
-        <a href="https://www.youtube.com/watch?v=u3351ccVkio&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw" target="_blank" class="social-btn" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.youtube.com/@EKO4M/releases" target="_blank" class="social-btn" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
   </nav>
@@ -46,7 +46,7 @@
         <p class="album-hero-desc">A deep dive into frequency optimization, synth-wave rhythmics, and algorithmic pulse.</p>
         <p class="album-hero-meta">12 tracks &bull; EKO.4M (echoform)</p>
         <div class="hub-buttons">
-          <a href="https://www.youtube.com/watch?v=u3351ccVkio&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw" target="_blank" class="btn-hub yt">
+          <a href="https://www.youtube.com/watch?v=u3351ccVkio&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw" target="_blank" class="btn-hub yt" onclick="event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/videoseries?list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&autoplay=1&quot;, &quot;echo logic&quot;)">
             <i class="fa-brands fa-youtube"></i> YouTube
           </a>
           <a href="https://open.spotify.com/album/5ikzD4bRJeoVPRFi38ummC?si=izFnbcRERaaOgtvK_fcOVQ" target="_blank" class="btn-hub spot">
@@ -60,112 +60,112 @@
     </div>
 
     <ul class="track-list">
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=u3351ccVkio&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=1','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/u3351ccVkio?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=1&quot;, &quot;Normal&quot;)">
         <span class="track-num">1</span>
-        <a href="https://www.youtube.com/watch?v=u3351ccVkio&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=1" target="_blank" class="track-name" onclick="event.stopPropagation()">Normal</a>
+        <a href="https://www.youtube.com/watch?v=u3351ccVkio&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=1" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/u3351ccVkio?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=1&quot;, &quot;Normal&quot;)">Normal</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echo-logic/1894984107" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/5ikzD4bRJeoVPRFi38ummC?si=izFnbcRERaaOgtvK_fcOVQ" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=u3351ccVkio&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=1" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=u3351ccVkio&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=1" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/u3351ccVkio?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=1&quot;, &quot;Normal&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=LaBN9Kts9zU&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=2','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/LaBN9Kts9zU?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=2&quot;, &quot;A Penny of Your Time&quot;)">
         <span class="track-num">2</span>
-        <a href="https://www.youtube.com/watch?v=LaBN9Kts9zU&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=2" target="_blank" class="track-name" onclick="event.stopPropagation()">A Penny of Your Time</a>
+        <a href="https://www.youtube.com/watch?v=LaBN9Kts9zU&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=2" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/LaBN9Kts9zU?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=2&quot;, &quot;A Penny of Your Time&quot;)">A Penny of Your Time</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echo-logic/1894984107" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/5ikzD4bRJeoVPRFi38ummC?si=izFnbcRERaaOgtvK_fcOVQ" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=LaBN9Kts9zU&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=2" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=LaBN9Kts9zU&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=2" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/LaBN9Kts9zU?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=2&quot;, &quot;A Penny of Your Time&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=tneWZfI-988&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=3','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/tneWZfI-988?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=3&quot;, &quot;Take it Back&quot;)">
         <span class="track-num">3</span>
-        <a href="https://www.youtube.com/watch?v=tneWZfI-988&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=3" target="_blank" class="track-name" onclick="event.stopPropagation()">Take it Back</a>
+        <a href="https://www.youtube.com/watch?v=tneWZfI-988&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=3" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/tneWZfI-988?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=3&quot;, &quot;Take it Back&quot;)">Take it Back</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echo-logic/1894984107" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/5ikzD4bRJeoVPRFi38ummC?si=izFnbcRERaaOgtvK_fcOVQ" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=tneWZfI-988&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=3" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=tneWZfI-988&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=3" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/tneWZfI-988?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=3&quot;, &quot;Take it Back&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=ZfXw3pSW2cU&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=4','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/ZfXw3pSW2cU?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=4&quot;, &quot;I Don't Belong Here&quot;)">
         <span class="track-num">4</span>
-        <a href="https://www.youtube.com/watch?v=ZfXw3pSW2cU&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=4" target="_blank" class="track-name" onclick="event.stopPropagation()">I Don't Belong Here</a>
+        <a href="https://www.youtube.com/watch?v=ZfXw3pSW2cU&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=4" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/ZfXw3pSW2cU?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=4&quot;, &quot;I Don't Belong Here&quot;)">I Don't Belong Here</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echo-logic/1894984107" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/5ikzD4bRJeoVPRFi38ummC?si=izFnbcRERaaOgtvK_fcOVQ" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=ZfXw3pSW2cU&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=4" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=ZfXw3pSW2cU&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=4" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/ZfXw3pSW2cU?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=4&quot;, &quot;I Don't Belong Here&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=pFazKsc03HI&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=5','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/pFazKsc03HI?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=5&quot;, &quot;Freeze Time&quot;)">
         <span class="track-num">5</span>
-        <a href="https://www.youtube.com/watch?v=pFazKsc03HI&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=5" target="_blank" class="track-name" onclick="event.stopPropagation()">Freeze Time</a>
+        <a href="https://www.youtube.com/watch?v=pFazKsc03HI&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=5" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/pFazKsc03HI?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=5&quot;, &quot;Freeze Time&quot;)">Freeze Time</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echo-logic/1894984107" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/5ikzD4bRJeoVPRFi38ummC?si=izFnbcRERaaOgtvK_fcOVQ" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=pFazKsc03HI&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=5" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=pFazKsc03HI&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=5" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/pFazKsc03HI?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=5&quot;, &quot;Freeze Time&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=hVgptHDuHSs&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=6','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/hVgptHDuHSs?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=6&quot;, &quot;Long Dusty Trail&quot;)">
         <span class="track-num">6</span>
-        <a href="https://www.youtube.com/watch?v=hVgptHDuHSs&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=6" target="_blank" class="track-name" onclick="event.stopPropagation()">Long Dusty Trail</a>
+        <a href="https://www.youtube.com/watch?v=hVgptHDuHSs&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=6" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/hVgptHDuHSs?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=6&quot;, &quot;Long Dusty Trail&quot;)">Long Dusty Trail</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echo-logic/1894984107" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/5ikzD4bRJeoVPRFi38ummC?si=izFnbcRERaaOgtvK_fcOVQ" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=hVgptHDuHSs&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=6" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=hVgptHDuHSs&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=6" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/hVgptHDuHSs?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=6&quot;, &quot;Long Dusty Trail&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=9gV29aDfFyc&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=7','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/9gV29aDfFyc?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=7&quot;, &quot;Fire + Fury&quot;)">
         <span class="track-num">7</span>
-        <a href="https://www.youtube.com/watch?v=9gV29aDfFyc&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=7" target="_blank" class="track-name" onclick="event.stopPropagation()">Fire + Fury</a>
+        <a href="https://www.youtube.com/watch?v=9gV29aDfFyc&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=7" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/9gV29aDfFyc?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=7&quot;, &quot;Fire + Fury&quot;)">Fire + Fury</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echo-logic/1894984107" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/5ikzD4bRJeoVPRFi38ummC?si=izFnbcRERaaOgtvK_fcOVQ" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=9gV29aDfFyc&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=7" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=9gV29aDfFyc&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=7" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/9gV29aDfFyc?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=7&quot;, &quot;Fire + Fury&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=_4N41JONYM4&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=8','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/_4N41JONYM4?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=8&quot;, &quot;Until I Win&quot;)">
         <span class="track-num">8</span>
-        <a href="https://www.youtube.com/watch?v=_4N41JONYM4&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=8" target="_blank" class="track-name" onclick="event.stopPropagation()">Until I Win</a>
+        <a href="https://www.youtube.com/watch?v=_4N41JONYM4&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=8" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/_4N41JONYM4?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=8&quot;, &quot;Until I Win&quot;)">Until I Win</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echo-logic/1894984107" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/5ikzD4bRJeoVPRFi38ummC?si=izFnbcRERaaOgtvK_fcOVQ" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=_4N41JONYM4&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=8" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=_4N41JONYM4&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=8" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/_4N41JONYM4?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=8&quot;, &quot;Until I Win&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=vKw6TPArPVc&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=9','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/vKw6TPArPVc?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=9&quot;, &quot;It Should've Been Me&quot;)">
         <span class="track-num">9</span>
-        <a href="https://www.youtube.com/watch?v=vKw6TPArPVc&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=9" target="_blank" class="track-name" onclick="event.stopPropagation()">It Should've Been Me</a>
+        <a href="https://www.youtube.com/watch?v=vKw6TPArPVc&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=9" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/vKw6TPArPVc?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=9&quot;, &quot;It Should've Been Me&quot;)">It Should've Been Me</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echo-logic/1894984107" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/5ikzD4bRJeoVPRFi38ummC?si=izFnbcRERaaOgtvK_fcOVQ" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=vKw6TPArPVc&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=9" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=vKw6TPArPVc&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=9" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/vKw6TPArPVc?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=9&quot;, &quot;It Should've Been Me&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=i-lv8F50y9M&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=10','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/i-lv8F50y9M?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=10&quot;, &quot;Lazy (I'm a Bum)&quot;)">
         <span class="track-num">10</span>
-        <a href="https://www.youtube.com/watch?v=i-lv8F50y9M&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=10" target="_blank" class="track-name" onclick="event.stopPropagation()">Lazy (I'm a Bum)</a>
+        <a href="https://www.youtube.com/watch?v=i-lv8F50y9M&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=10" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/i-lv8F50y9M?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=10&quot;, &quot;Lazy (I'm a Bum)&quot;)">Lazy (I'm a Bum)</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echo-logic/1894984107" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/5ikzD4bRJeoVPRFi38ummC?si=izFnbcRERaaOgtvK_fcOVQ" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=i-lv8F50y9M&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=10" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=i-lv8F50y9M&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=10" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/i-lv8F50y9M?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=10&quot;, &quot;Lazy (I'm a Bum)&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=4BWzBDwKjBo&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=11','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/4BWzBDwKjBo?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=11&quot;, &quot;Hokey Pokey Bounce&quot;)">
         <span class="track-num">11</span>
-        <a href="https://www.youtube.com/watch?v=4BWzBDwKjBo&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=11" target="_blank" class="track-name" onclick="event.stopPropagation()">Hokey Pokey Bounce</a>
+        <a href="https://www.youtube.com/watch?v=4BWzBDwKjBo&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=11" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/4BWzBDwKjBo?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=11&quot;, &quot;Hokey Pokey Bounce&quot;)">Hokey Pokey Bounce</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echo-logic/1894984107" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/5ikzD4bRJeoVPRFi38ummC?si=izFnbcRERaaOgtvK_fcOVQ" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=4BWzBDwKjBo&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=11" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=4BWzBDwKjBo&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=11" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/4BWzBDwKjBo?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=11&quot;, &quot;Hokey Pokey Bounce&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=2w0cUS4h1xs&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=12','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/2w0cUS4h1xs?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=12&quot;, &quot;Neon Lights&quot;)">
         <span class="track-num">12</span>
-        <a href="https://www.youtube.com/watch?v=2w0cUS4h1xs&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=12" target="_blank" class="track-name" onclick="event.stopPropagation()">Neon Lights</a>
+        <a href="https://www.youtube.com/watch?v=2w0cUS4h1xs&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=12" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/2w0cUS4h1xs?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=12&quot;, &quot;Neon Lights&quot;)">Neon Lights</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echo-logic/1894984107" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/5ikzD4bRJeoVPRFi38ummC?si=izFnbcRERaaOgtvK_fcOVQ" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=2w0cUS4h1xs&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=12" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=2w0cUS4h1xs&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=12" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/2w0cUS4h1xs?autoplay=1&list=OLAK5uy_kVP2zm7Dwm-_MNgjnlXw8R_pUZg7TeELw&index=12&quot;, &quot;Neon Lights&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
     </ul>
@@ -178,5 +178,6 @@
     </div>
   </footer>
 
+  <script src="../assets/player.js"></script>
 </body>
 </html>
