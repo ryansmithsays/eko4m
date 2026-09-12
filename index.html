@@ -243,8 +243,8 @@
     /* Album Section - Grid */
     .album-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
     }
     .album-card {
       background: var(--bg-card);
@@ -423,6 +423,10 @@
       .section-title { font-size: 1.4rem; }
       .hero-banner { max-height: 250px; }
       .artist-tagline { font-size: 1rem; letter-spacing: 2px; }
+      .album-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .album-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -479,7 +483,26 @@
       </div>
 
       <div class="album-grid">
-        <!-- Album 1: Echo Logic -->
+        <!-- Album 1: Echo Locations -->
+        <article class="album-card">
+          <div class="album-cover-wrap">
+            <img src="EKO4M - echo locations - Album.jpg" alt="echo locations Album Cover" class="album-cover" />
+          </div>
+          <div class="album-content">
+            <div>
+              <span class="album-badge">Full Album</span>
+              <h3 class="album-name">echo locations</h3>
+              <p class="album-desc">A global electronic journey charting signals and frequencies across continents.</p>
+            </div>
+            <div class="track-links">
+              <a href="https://www.youtube.com/@EKO4M/releases" target="_blank" class="track-link"><i class="fa-brands fa-youtube"></i> YouTube</a>
+              <a href="https://open.spotify.com/artist/6dbpSdzyHrZXGraGaOJzjj" target="_blank" class="track-link"><i class="fa-brands fa-spotify"></i> Spotify</a>
+              <a href="https://music.apple.com/us/artist/eko-4m/1826014624" target="_blank" class="track-link"><i class="fa-brands fa-apple"></i> Apple</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Album 2: Echo Logic -->
         <article class="album-card">
           <div class="album-cover-wrap">
             <img src="EKO.4M - echo logic - Album Cover.jpg" alt="echo logic Album Cover" class="album-cover" />
@@ -498,16 +521,35 @@
           </div>
         </article>
 
-        <!-- Album 2: Echo Locations -->
+        <!-- Album 3: Echoes in Eternity -->
         <article class="album-card">
           <div class="album-cover-wrap">
-            <img src="EKO4M - echo locations - Album.jpg" alt="echo locations Album Cover" class="album-cover" />
+            <img src="EKO.4M - echoes in eternity - Album Cover.jpg" alt="echoes in eternity Album Cover" class="album-cover" />
           </div>
           <div class="album-content">
             <div>
               <span class="album-badge">Full Album</span>
-              <h3 class="album-name">echo locations</h3>
-              <p class="album-desc">A global electronic journey charting signals and frequencies across continents.</p>
+              <h3 class="album-name">echoes in eternity</h3>
+              <p class="album-desc">A wide-lens meditation on time, memory, and sound left rippling long after the beat stops.</p>
+            </div>
+            <div class="track-links">
+              <a href="https://www.youtube.com/@EKO4M/releases" target="_blank" class="track-link"><i class="fa-brands fa-youtube"></i> YouTube</a>
+              <a href="https://open.spotify.com/artist/6dbpSdzyHrZXGraGaOJzjj" target="_blank" class="track-link"><i class="fa-brands fa-spotify"></i> Spotify</a>
+              <a href="https://music.apple.com/us/artist/eko-4m/1826014624" target="_blank" class="track-link"><i class="fa-brands fa-apple"></i> Apple</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Album 4: echoform -->
+        <article class="album-card">
+          <div class="album-cover-wrap">
+            <img src="EKO.4M - echoform - Album Cover.png" alt="echoform Album Cover" class="album-cover" />
+          </div>
+          <div class="album-content">
+            <div>
+              <span class="album-badge">Full Album</span>
+              <h3 class="album-name">echoform</h3>
+              <p class="album-desc">The self-titled foundation of the EKO.4M sound — human intention, AI interpretation.</p>
             </div>
             <div class="track-links">
               <a href="https://www.youtube.com/@EKO4M/releases" target="_blank" class="track-link"><i class="fa-brands fa-youtube"></i> YouTube</a>
