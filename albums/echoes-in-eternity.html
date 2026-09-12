@@ -30,7 +30,7 @@
       <div class="nav-socials">
         <a href="https://music.apple.com/us/album/echoes-in-eternity/1840308546" target="_blank" class="social-btn" title="Apple Music"><i class="fa-brands fa-apple"></i></a>
         <a href="https://open.spotify.com/album/1ztY0gcBhxhPBMXoDRsT4E?si=7IesnMmASD24IAUAtt_oIw" target="_blank" class="social-btn" title="Spotify"><i class="fa-brands fa-spotify"></i></a>
-        <a href="https://www.youtube.com/watch?v=lSqO5agCSmA&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI" target="_blank" class="social-btn" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.youtube.com/@EKO4M/releases" target="_blank" class="social-btn" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
   </nav>
@@ -46,7 +46,7 @@
         <p class="album-hero-desc">A wide-lens meditation on time, memory, and sound left rippling long after the beat stops.</p>
         <p class="album-hero-meta">12 tracks &bull; EKO.4M (echoform)</p>
         <div class="hub-buttons">
-          <a href="https://www.youtube.com/watch?v=lSqO5agCSmA&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI" target="_blank" class="btn-hub yt">
+          <a href="https://www.youtube.com/watch?v=lSqO5agCSmA&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI" target="_blank" class="btn-hub yt" onclick="event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/videoseries?list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&autoplay=1&quot;, &quot;echoes in eternity&quot;)">
             <i class="fa-brands fa-youtube"></i> YouTube
           </a>
           <a href="https://open.spotify.com/album/1ztY0gcBhxhPBMXoDRsT4E?si=7IesnMmASD24IAUAtt_oIw" target="_blank" class="btn-hub spot">
@@ -60,112 +60,112 @@
     </div>
 
     <ul class="track-list">
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=lSqO5agCSmA&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=1','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/lSqO5agCSmA?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=1&quot;, &quot;Starting Fresh&quot;)">
         <span class="track-num">1</span>
-        <a href="https://www.youtube.com/watch?v=lSqO5agCSmA&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=1" target="_blank" class="track-name" onclick="event.stopPropagation()">Starting Fresh</a>
+        <a href="https://www.youtube.com/watch?v=lSqO5agCSmA&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=1" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/lSqO5agCSmA?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=1&quot;, &quot;Starting Fresh&quot;)">Starting Fresh</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echoes-in-eternity/1840308546" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/1ztY0gcBhxhPBMXoDRsT4E?si=7IesnMmASD24IAUAtt_oIw" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=lSqO5agCSmA&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=1" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=lSqO5agCSmA&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=1" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/lSqO5agCSmA?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=1&quot;, &quot;Starting Fresh&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=19jpFNRWziE&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=2','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/19jpFNRWziE?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=2&quot;, &quot;On the Grind&quot;)">
         <span class="track-num">2</span>
-        <a href="https://www.youtube.com/watch?v=19jpFNRWziE&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=2" target="_blank" class="track-name" onclick="event.stopPropagation()">On the Grind</a>
+        <a href="https://www.youtube.com/watch?v=19jpFNRWziE&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=2" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/19jpFNRWziE?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=2&quot;, &quot;On the Grind&quot;)">On the Grind</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echoes-in-eternity/1840308546" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/1ztY0gcBhxhPBMXoDRsT4E?si=7IesnMmASD24IAUAtt_oIw" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=19jpFNRWziE&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=2" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=19jpFNRWziE&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=2" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/19jpFNRWziE?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=2&quot;, &quot;On the Grind&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=eIhJtc0Dcdc&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=3','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/eIhJtc0Dcdc?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=3&quot;, &quot;Heartbreak History&quot;)">
         <span class="track-num">3</span>
-        <a href="https://www.youtube.com/watch?v=eIhJtc0Dcdc&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=3" target="_blank" class="track-name" onclick="event.stopPropagation()">Heartbreak History</a>
+        <a href="https://www.youtube.com/watch?v=eIhJtc0Dcdc&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=3" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/eIhJtc0Dcdc?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=3&quot;, &quot;Heartbreak History&quot;)">Heartbreak History</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echoes-in-eternity/1840308546" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/1ztY0gcBhxhPBMXoDRsT4E?si=7IesnMmASD24IAUAtt_oIw" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=eIhJtc0Dcdc&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=3" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=eIhJtc0Dcdc&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=3" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/eIhJtc0Dcdc?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=3&quot;, &quot;Heartbreak History&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=W9bUZhG6bYY&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=4','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/W9bUZhG6bYY?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=4&quot;, &quot;New Beginnings&quot;)">
         <span class="track-num">4</span>
-        <a href="https://www.youtube.com/watch?v=W9bUZhG6bYY&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=4" target="_blank" class="track-name" onclick="event.stopPropagation()">New Beginnings</a>
+        <a href="https://www.youtube.com/watch?v=W9bUZhG6bYY&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=4" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/W9bUZhG6bYY?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=4&quot;, &quot;New Beginnings&quot;)">New Beginnings</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echoes-in-eternity/1840308546" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/1ztY0gcBhxhPBMXoDRsT4E?si=7IesnMmASD24IAUAtt_oIw" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=W9bUZhG6bYY&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=4" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=W9bUZhG6bYY&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=4" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/W9bUZhG6bYY?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=4&quot;, &quot;New Beginnings&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=Ubs-vDXrRbA&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=5','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/Ubs-vDXrRbA?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=5&quot;, &quot;Trailblazer&quot;)">
         <span class="track-num">5</span>
-        <a href="https://www.youtube.com/watch?v=Ubs-vDXrRbA&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=5" target="_blank" class="track-name" onclick="event.stopPropagation()">Trailblazer</a>
+        <a href="https://www.youtube.com/watch?v=Ubs-vDXrRbA&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=5" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/Ubs-vDXrRbA?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=5&quot;, &quot;Trailblazer&quot;)">Trailblazer</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echoes-in-eternity/1840308546" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/1ztY0gcBhxhPBMXoDRsT4E?si=7IesnMmASD24IAUAtt_oIw" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=Ubs-vDXrRbA&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=5" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=Ubs-vDXrRbA&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=5" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/Ubs-vDXrRbA?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=5&quot;, &quot;Trailblazer&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=s0Bp-9kpVhY&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=6','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/s0Bp-9kpVhY?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=6&quot;, &quot;Warriors' Walk&quot;)">
         <span class="track-num">6</span>
-        <a href="https://www.youtube.com/watch?v=s0Bp-9kpVhY&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=6" target="_blank" class="track-name" onclick="event.stopPropagation()">Warriors' Walk</a>
+        <a href="https://www.youtube.com/watch?v=s0Bp-9kpVhY&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=6" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/s0Bp-9kpVhY?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=6&quot;, &quot;Warriors' Walk&quot;)">Warriors' Walk</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echoes-in-eternity/1840308546" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/1ztY0gcBhxhPBMXoDRsT4E?si=7IesnMmASD24IAUAtt_oIw" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=s0Bp-9kpVhY&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=6" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=s0Bp-9kpVhY&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=6" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/s0Bp-9kpVhY?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=6&quot;, &quot;Warriors' Walk&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=r_4CR3ZzSdo&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=7','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/r_4CR3ZzSdo?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=7&quot;, &quot;I Can't Lose You&quot;)">
         <span class="track-num">7</span>
-        <a href="https://www.youtube.com/watch?v=r_4CR3ZzSdo&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=7" target="_blank" class="track-name" onclick="event.stopPropagation()">I Can't Lose You</a>
+        <a href="https://www.youtube.com/watch?v=r_4CR3ZzSdo&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=7" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/r_4CR3ZzSdo?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=7&quot;, &quot;I Can't Lose You&quot;)">I Can't Lose You</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echoes-in-eternity/1840308546" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/1ztY0gcBhxhPBMXoDRsT4E?si=7IesnMmASD24IAUAtt_oIw" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=r_4CR3ZzSdo&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=7" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=r_4CR3ZzSdo&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=7" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/r_4CR3ZzSdo?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=7&quot;, &quot;I Can't Lose You&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=qqRszMZV720&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=8','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/qqRszMZV720?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=8&quot;, &quot;Skip Ahead (Remix)&quot;)">
         <span class="track-num">8</span>
-        <a href="https://www.youtube.com/watch?v=qqRszMZV720&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=8" target="_blank" class="track-name" onclick="event.stopPropagation()">Skip Ahead (Remix)</a>
+        <a href="https://www.youtube.com/watch?v=qqRszMZV720&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=8" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/qqRszMZV720?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=8&quot;, &quot;Skip Ahead (Remix)&quot;)">Skip Ahead (Remix)</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echoes-in-eternity/1840308546" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/1ztY0gcBhxhPBMXoDRsT4E?si=7IesnMmASD24IAUAtt_oIw" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=qqRszMZV720&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=8" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=qqRszMZV720&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=8" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/qqRszMZV720?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=8&quot;, &quot;Skip Ahead (Remix)&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=2xQuUmyJRHI&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=9','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/2xQuUmyJRHI?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=9&quot;, &quot;Me Time&quot;)">
         <span class="track-num">9</span>
-        <a href="https://www.youtube.com/watch?v=2xQuUmyJRHI&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=9" target="_blank" class="track-name" onclick="event.stopPropagation()">Me Time</a>
+        <a href="https://www.youtube.com/watch?v=2xQuUmyJRHI&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=9" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/2xQuUmyJRHI?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=9&quot;, &quot;Me Time&quot;)">Me Time</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echoes-in-eternity/1840308546" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/1ztY0gcBhxhPBMXoDRsT4E?si=7IesnMmASD24IAUAtt_oIw" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=2xQuUmyJRHI&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=9" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=2xQuUmyJRHI&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=9" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/2xQuUmyJRHI?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=9&quot;, &quot;Me Time&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=k8irNm7DV58&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=10','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/k8irNm7DV58?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=10&quot;, &quot;Your Villain&quot;)">
         <span class="track-num">10</span>
-        <a href="https://www.youtube.com/watch?v=k8irNm7DV58&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=10" target="_blank" class="track-name" onclick="event.stopPropagation()">Your Villain</a>
+        <a href="https://www.youtube.com/watch?v=k8irNm7DV58&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=10" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/k8irNm7DV58?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=10&quot;, &quot;Your Villain&quot;)">Your Villain</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echoes-in-eternity/1840308546" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/1ztY0gcBhxhPBMXoDRsT4E?si=7IesnMmASD24IAUAtt_oIw" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=k8irNm7DV58&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=10" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=k8irNm7DV58&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=10" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/k8irNm7DV58?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=10&quot;, &quot;Your Villain&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=v1F4zeilt_o&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=11','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/v1F4zeilt_o?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=11&quot;, &quot;Chapter 23 (Open Book)&quot;)">
         <span class="track-num">11</span>
-        <a href="https://www.youtube.com/watch?v=v1F4zeilt_o&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=11" target="_blank" class="track-name" onclick="event.stopPropagation()">Chapter 23 (Open Book)</a>
+        <a href="https://www.youtube.com/watch?v=v1F4zeilt_o&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=11" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/v1F4zeilt_o?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=11&quot;, &quot;Chapter 23 (Open Book)&quot;)">Chapter 23 (Open Book)</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echoes-in-eternity/1840308546" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/1ztY0gcBhxhPBMXoDRsT4E?si=7IesnMmASD24IAUAtt_oIw" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=v1F4zeilt_o&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=11" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=v1F4zeilt_o&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=11" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/v1F4zeilt_o?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=11&quot;, &quot;Chapter 23 (Open Book)&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
-      <li class="track-row" onclick="window.open('https://www.youtube.com/watch?v=11AKv5cIQu8&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=12','_blank')">
+      <li class="track-row" onclick="ekoPlay(&quot;https://www.youtube.com/embed/11AKv5cIQu8?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=12&quot;, &quot;Just Being Me&quot;)">
         <span class="track-num">12</span>
-        <a href="https://www.youtube.com/watch?v=11AKv5cIQu8&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=12" target="_blank" class="track-name" onclick="event.stopPropagation()">Just Being Me</a>
+        <a href="https://www.youtube.com/watch?v=11AKv5cIQu8&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=12" target="_blank" class="track-name" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/11AKv5cIQu8?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=12&quot;, &quot;Just Being Me&quot;)">Just Being Me</a>
         <div class="track-actions">
           <a href="https://music.apple.com/us/album/echoes-in-eternity/1840308546" target="_blank" class="track-icon-btn" title="Apple Music (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-apple"></i></a>
           <a href="https://open.spotify.com/album/1ztY0gcBhxhPBMXoDRsT4E?si=7IesnMmASD24IAUAtt_oIw" target="_blank" class="track-icon-btn" title="Spotify (album)" onclick="event.stopPropagation()"><i class="fa-brands fa-spotify"></i></a>
-          <a href="https://www.youtube.com/watch?v=11AKv5cIQu8&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=12" target="_blank" class="track-icon-btn" title="YouTube" onclick="event.stopPropagation()"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/watch?v=11AKv5cIQu8&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=12" target="_blank" class="track-icon-btn" title="Play here" onclick="event.stopPropagation(); event.preventDefault(); ekoPlay(&quot;https://www.youtube.com/embed/11AKv5cIQu8?autoplay=1&list=OLAK5uy_kU151P4gm03y55vJXxZyuOupce669_9oI&index=12&quot;, &quot;Just Being Me&quot;)"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </li>
     </ul>
@@ -178,5 +178,6 @@
     </div>
   </footer>
 
+  <script src="../assets/player.js"></script>
 </body>
 </html>
